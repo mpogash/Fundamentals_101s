@@ -23,4 +23,9 @@ Good for:
     Time Series Analysis: robust built-in handling o fdates, time zones, 
                           moving windows, and data shifting
 
+                        
+                          
+for help from command line: 
+python -c "import pandas as pd; help(pd.Series)"
+
 """
