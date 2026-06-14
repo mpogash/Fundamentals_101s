@@ -1,7 +1,7 @@
 """
 M. Pogash 2026-06-05
 
-to learn numpy
+numpy 101
 """
 
 # == IMPORT LIBRARIES ====================
