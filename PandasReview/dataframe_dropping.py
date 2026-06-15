@@ -62,4 +62,15 @@ label_str = "pd_dataframe_1_copy = pd_dataframe_1_copy.dropna()"
 print(f"{label_str} is \n{pd_dataframe_1_copy}\n")
 print_dataframe_stats(pd_dataframe_1_copy,label_str)
 
+# == BASE DATAFRAME 2 ====================
+lab = ["Metric1","Metric2","Metric3","Metric4","Metric5","Metric6"]
+pd_dataframe_2 = pd.DataFrame(np.arange(-15,15,1).reshape(5,6),columns=lab)
+label_str = "Original DataFrame 2"
+print(f"{label_str} is \n{pd_dataframe_2}\n")
+print_dataframe_stats(pd_dataframe_2,label_str)
 
+# Drop Columns
+pd_dataframe_2_drop = pd_dataframe_2.drop(["Metric2"], axis=1)
+label_str = "pd_dataframe_2_drop = pd_dataframe_2.drop(['Metric2'], axis=1)"
+print(f"{label_str} is \n{pd_dataframe_2_drop}\n")
+print_dataframe_stats(pd_dataframe_2_drop,label_str)
